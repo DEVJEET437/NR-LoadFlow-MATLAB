@@ -1,8 +1,8 @@
-\# Newton–Raphson Load Flow Analysis (MATLAB)
+# Newton–Raphson Load Flow Analysis (MATLAB)
 
 
 
-\## Overview
+## Overview
 
 This project implements the \*\*Newton–Raphson (NR) load flow algorithm\*\* for a \*\*5-bus power system\*\* using MATLAB.  
 
@@ -23,7 +23,7 @@ The MATLAB App Designer interface allows interactive execution of the Newton–R
 ![Load Flow App Dashboard](assets/Dashboard.png)
 
 
-\## Key Features
+## Key Features
 
 \- Y-bus matrix formation 
 
@@ -41,7 +41,7 @@ The MATLAB App Designer interface allows interactive execution of the Newton–R
 
 
 
-\## System Details
+## System Details
 
 \- Number of buses: \*\*5\*\*
 
@@ -59,7 +59,7 @@ The MATLAB App Designer interface allows interactive execution of the Newton–R
 
 
 
-\## Project Structure
+## Project Structure
 
 NR\_5Bus\_LoadFlow/
 
@@ -97,7 +97,7 @@ NR\_5Bus\_LoadFlow/
 
 └── README.md
 
-\## How to Run (Script Version)
+## How to Run (Script Version)
 
 1\. Open MATLAB  
 
@@ -109,7 +109,7 @@ NR\_5Bus\_LoadFlow/
 
 How to Run (App Version)
 
-1. Open MATLAB.
+1\. Open MATLAB.
 
 2\. Navigate to the app folder.
 
