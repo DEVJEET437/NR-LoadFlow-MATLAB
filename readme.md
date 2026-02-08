@@ -16,6 +16,11 @@ The implementation computes steady-state \*\*bus voltage magnitudes and phase an
 
 ---
 
+## Application Dashboard
+
+The MATLAB App Designer interface allows interactive execution of the Newton–Raphson load flow analysis and visualization of results.
+
+![Load Flow App Dashboard](assets/Dashboard.png)
 
 
 \## Key Features
