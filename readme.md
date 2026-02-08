@@ -4,13 +4,13 @@
 
 ## Overview
 
-This project implements the \*\*Newton–Raphson (NR) load flow algorithm\*\* for a \*\*5-bus power system\*\* using MATLAB.  
+This project implements the Newton–Raphson (NR) load flow algorithm for a 5-bus power system using MATLAB.  
 
-The solver is developed \*\*from first principles\*\*, without relying on built-in power system toolboxes, and follows a \*\*modular, function-based design\*\*.
+The solver is developed from first principles, without relying on built-in power system toolboxes, and follows a modular, function-based design.
 
 
 
-The implementation computes steady-state \*\*bus voltage magnitudes and phase angles\*\* by solving the nonlinear power flow equations using analytical Jacobian formulation.
+The implementation computes steady-state bus voltage magnitudes and phase angles by solving the nonlinear power flow equations using analytical Jacobian formulation.
 
 
 
@@ -27,9 +27,9 @@ The MATLAB App Designer interface allows interactive execution of the Newton–R
 
 \- Y-bus matrix formation 
 
-\- Proper handling of \*\*Slack, PV, and PQ buses\*\*  
+\- Proper handling of Slack, PV, and PQ buses 
 
-\- Analytical formulation of the \*\*Jacobian matrix (J₁–J₄)\*\*  
+\- Analytical formulation of the Jacobian matrix (J₁–J₄)  
 
 \- Newton–Raphson iterative solution with quadratic convergence  
 
@@ -43,15 +43,15 @@ The MATLAB App Designer interface allows interactive execution of the Newton–R
 
 ## System Details
 
-\- Number of buses: \*\*5\*\*
+\- Number of buses: 5
 
-\- Base MVA: \*\*100\*\*
+\- Base MVA: 100
 
-\- Load flow method: \*\*Newton–Raphson\*\*
+\- Load flow method: Newton–Raphson
 
-\- Convergence tolerance: \*\*1 × 10⁻⁶\*\*
+\- Convergence tolerance: 1 × 10⁻⁶
 
-\- Convergence achieved in \*\*3 iterations\*\*
+\- Convergence achieved in 3 iterations(With Current Bus and Line Data)
 
 
 
@@ -67,23 +67,29 @@ NR\_5Bus\_LoadFlow/
 
 ├── data/
 
-│ ├── busdata.m % Bus data (function)
+│ ├── busdata.m 
 
-│ └── linedata.m % Line data (function)
+│ └── linedata.m
 
 │
 
 ├── core/
 
-│ ├── ybus.m % Y-bus formation
+│ ├── ybus.m 
 
-│ ├── powercalc.m % P \& Q calculation
+│ ├── powercalc.m 
 
-│ ├── mismatch.m % Power mismatch vector
+│ ├── mismatch.m 
 
-│ ├── jacobian.m % Jacobian matrix
+│ ├── jacobian.m 
 
-│ └── NR\_loadflow.m % NR iteration loop
+│ └── NR\_loadflow.m 
+
+│
+
+├── assets
+
+│ └──Dashboard.png
 
 │
 
@@ -97,7 +103,9 @@ NR\_5Bus\_LoadFlow/
 
 └── README.md
 
-## How to Run (Script Version)
+## How to Run 
+
+Script Version
 
 1\. Open MATLAB  
 
@@ -107,7 +115,7 @@ NR\_5Bus\_LoadFlow/
 
 &nbsp;  	main.m
 
-How to Run (App Version)
+App Version
 
 1\. Open MATLAB.
 
