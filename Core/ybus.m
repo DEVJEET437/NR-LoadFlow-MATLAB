@@ -9,7 +9,7 @@ for k = 1:size(linedata,1)
     j = linedata(k,2);
     R = linedata(k,3);
     X = linedata(k,4);
-    B = linedata(k,5);   % B/2
+    B = linedata(k,5);  
 
     Z = complex(R, X);
     Y = 1/Z;

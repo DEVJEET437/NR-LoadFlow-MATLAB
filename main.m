@@ -4,7 +4,7 @@ addpath('data');
 addpath('core');
 % Load data
 busdata = bus_data();
-linedata = line_data()
+linedata = line_data();
 
 % Number of buses
 nbus = size(busdata,1);
@@ -18,6 +18,9 @@ Va = deg2rad(busdata(:,4));
 Ybus = ybus(linedata, nbus);
 
 [Vm, Va, iter] = NR_loadflow(busdata, Ybus);
+
+disp('Y-Bus Matrix')
+disp(Ybus)
 
 disp('Final Bus Voltages (p.u.)')
 disp(Vm)

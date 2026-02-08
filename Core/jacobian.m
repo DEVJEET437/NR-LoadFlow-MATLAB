@@ -11,9 +11,9 @@ type = busdata(:,2);
 % Identify buses
 pv = find(type == 2);
 pq = find(type == 3);
-pvpq = [pv; pq];
+A = [pv; pq];
 
-np = length(pvpq);
+np = length(A);
 nq = length(pq);
 
 J1 = zeros(np, np);
@@ -25,9 +25,9 @@ J4 = zeros(nq, nq);
 
 %% J1 = dP/dδ
 for a = 1:np
-    i = pvpq(a);
+    i = A(a);
     for b = 1:np
-        j = pvpq(b);
+        j = A(b);
 
         if i == j
             J1(a,b) = -Q(i) - B(i,i)*Vm(i)^2;
@@ -40,7 +40,7 @@ end
 
 %% J2 = dP/dV
 for a = 1:np
-    i = pvpq(a);
+    i = A(a);
     for b = 1:nq
         j = pq(b);
 
@@ -57,7 +57,7 @@ end
 for a = 1:nq
     i = pq(a);
     for b = 1:np
-        j = pvpq(b);
+        j = A(b);
 
         if i == j
             J3(a,b) = P(i) - G(i,i)*Vm(i)^2;
